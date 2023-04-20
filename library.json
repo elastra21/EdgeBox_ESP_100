@@ -1,0 +1,49 @@
+{
+  "name": "EdgeBox_ESP_100",
+  "version": "1.0.0",
+  "keywords": "ESP32-S3, EdgeBox, EdgeBox-ESP-100, Seeed Studio, ModbusTCP",
+  "description": "Provides basic pinout and libraries to communicate with RTC and Analog Inputs of EdgeBox_ESP_100 board.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Emmanuel Lastra Williams",
+      "url": "https://github.com/elastra21",
+      "maintainer": true
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elastra21/EdgeBox_ESP_100.git",
+    "branch": "master"
+  },
+  "dependencies": [
+    {
+      "owner": "adafruit",
+      "name": "RTClib",
+      "version": "*",
+      "platforms": ["espressif32"]
+    },
+    {
+      "owner": "adafruit",
+      "name": "Adafruit ADS1X15",
+      "version": "*",
+      "platforms": ["espressif32"]
+    }
+  ],
+  "export": {
+    "include": [
+      "src/*.cpp",
+      "src/*.h",
+      "examples/*",
+      "Test/*",
+      ".gitignore",
+      "README.md",
+      "license.md",
+      "keywords.txt",
+      "library.properties",
+      "library.json"
+    ]
+  },
+  "frameworks": "arduino",
+  "platforms": ["espressif32"]
+}
