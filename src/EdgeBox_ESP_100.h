@@ -1,5 +1,6 @@
 #ifndef EDGEBOX_ESP_100_H
 #define EDGEBOX_ESP_100_H
+#include <SPI.h>
 #include "RTClib.h"
 #include <Adafruit_ADS1X15.h>
 
